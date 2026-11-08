@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laplace Challenge — Clase 4, parte 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+  <header class="topbar">
+    <div>
+      <span class="eyebrow">CLASE 04 · PARTE 2 · VIDEO INTERACTIVO</span>
+      <h1>Laplace Challenge</h1>
+      <p>Sistemas de orden superior · Tiempo muerto</p>
+    </div>
+    <div class="scorebox">
+      <span>XP</span>
+      <strong id="xp">0</strong>
+    </div>
+  </header>
+
+  <section class="progress-card">
+    <div class="progress-meta">
+      <span id="progressText">Misión 0 de 7</span>
+      <span id="progressPercent">0%</span>
+    </div>
+    <div class="progress"><div id="progressBar"></div></div>
+  </section>
+
+  <section class="video-layout">
+    <div class="video-panel">
+      <div class="video-wrap">
+          <div id="lessonVideo"></div>
+        <div id="videoBadge" class="video-badge">▶ CLASE 04 · PARTE 2</div>
+      </div>
+      <div class="video-note">
+        <span>💡</span>
+        <span>El video se pausará automáticamente en los retos. Responde para continuar.</span>
+      </div>
+    </div>
+
+    <aside class="mission-panel">
+      <div class="mission-head">
+        <span class="tag">MISIÓN</span>
+        <span id="missionCount">01 / 07</span>
+      </div>
+      <h2 id="missionTitle">Prepárate</h2>
+      <p id="missionDescription">Mira la clase y presta atención: aparecerán retos durante la explicación.</p>
+      <div class="stats">
+        <div><small>ACERTADAS</small><strong id="correctCount">0</strong></div>
+        <div><small>RETOS</small><strong id="totalChallenges">7</strong></div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="transcript-card">
+    <span class="tag">OBJETIVO</span>
+    <h2>Analiza sistemas de orden superior</h2>
+    <p>Durante la clase tendrás que reconocer sistemas de orden superior, comparar sus respuestas, entender el tiempo muerto e identificar el orden de una función de transferencia.</p>
+  </section>
+</main>
+
+<div id="challengeOverlay" class="overlay hidden" aria-hidden="true">
+  <div class="challenge-card" role="dialog" aria-modal="true" aria-labelledby="challengeTitle">
+    <div class="challenge-top">
+      <span class="tag" id="challengeTag">RETO</span>
+      <span id="timer">20</span>
+    </div>
+    <div class="challenge-icon" id="challengeIcon">🧠</div>
+    <h2 id="challengeTitle"></h2>
+    <p id="challengeQuestion"></p>
+    <div id="answers" class="answers"></div>
+    <div id="feedback" class="feedback" aria-live="polite"></div>
+    <button id="continueBtn" class="primary-btn hidden" type="button">Continuar con la clase →</button>
+  </div>
+</div>
+
+<div id="finalOverlay" class="overlay hidden" aria-hidden="true">
+  <div class="challenge-card final-card" role="dialog" aria-modal="true">
+    <div class="final-icon">🏆</div>
+    <span class="tag">MISIÓN COMPLETADA</span>
+    <h2>¡Terminaste la clase!</h2>
+    <p id="finalMessage"></p>
+    <div class="final-stats">
+      <div><strong id="finalXP">0</strong><span>XP</span></div>
+      <div><strong id="finalCorrect">0/7</strong><span>Retos</span></div>
+    </div>
+    <button id="restartBtn" class="primary-btn" type="button">Repetir actividad</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
